@@ -1,0 +1,237 @@
+@media only screen and (min-width: 1200px) {
+    header .desk-head .desk-item:nth-child(2) {
+      align-items: center;
+      display: flex;
+      flex: 1 1 45%;
+      max-width: 45%;
+    }
+  }
+
+* {
+box-sizing: border-box;
+}
+  
+body {
+    font-family: General Sans,sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.f- {
+    color: white;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.footer-title .h6-title {
+    margin: unset;
+    display: block;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+footer .f-menu-sec .f-menu-sec-item .h6-title {
+    color: white;
+    font-size: 15.5px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    padding-bottom: 18px;
+}
+
+footer .f-menu-sec .f-menu-sec-item .menu ul li a{
+    color: white;
+    display: block;
+    width: 100%;
+}
+
+footer .f-menu-sec .f-menu-sec-item:nth-child(3) .order-now-footer {
+    margin-bottom: 18px;
+}
+
+
+.f-logo {
+    height: 82px;
+    width: 145px;
+    float: left;
+    margin: 3.5px 10px;
+    box-shadow: 0 5px 27px 0 rgba(0,0,0,.1);
+}
+
+.f-app-stores {
+    height: 44.17px;
+    width: 141px;
+}
+
+footer {
+    background-color: #1d4f1f;
+    display: block;
+}
+
+footer .footer-wrap {
+    margin: auto;
+    max-width: 1920px;
+    background-color: #1d4f1f;
+}
+
+.f-social-sec {
+    background-color: #2d9751;
+    margin: 0 182px;
+    padding: 30px 160px;
+    display: flex;
+    border-radius: 0 0 20px 20px;
+}
+
+.f-soc-item:first-child {
+    justify-content: flex-start;
+    max-width: 50%;
+    flex: 1 1 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+.f-soc-item:last-child {
+    justify-content: flex-end;
+    padding-top: unset;
+    flex: 1 1 50%;
+    max-width: 50%;
+    text-align: left;
+}
+
+.f-soc-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.f-social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    filter: brightness(0) invert(1); /* Makes icons white */
+    transition: transform 0.3s ease;
+}
+
+.footer-title {
+    color: white;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: left;
+    line-height: normal;
+    margin: 5px;
+}
+
+.f-soc-item ul li img{
+    height: 41px;
+    width: 41px;
+}
+
+.f-menu-sec {
+    padding: 80px 0 36px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.f-menu-sec-item {
+    text-align: left;
+}
+
+.f-menu {
+    display: flex;
+}
+
+.f-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    list-style: none;
+}
+
+.f-menu-list li {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.f-menu-list ul {
+    list-style: none;
+    gap: 0px;
+    margin: 0;
+    display: flex;
+    gap: 0;
+}
+
+.f-menu-list a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.f-menu-item {
+    flex: 50%;
+    list-style: none;
+    display: list-item;
+    padding-bottom: 20px;
+}
+
+.f-order-now-footer {
+    cursor: pointer;
+    padding: 0 50px;
+    color: white;
+    background: #2d9751;
+    border: unset;
+    border-radius: 12px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    height: 38px;
+    line-height: 30px;
+    text-transform: uppercase;
+    width: auto;
+    margin: 0;
+    font-family: inherit;
+}
+
+.f-order-now-footer:hover {
+    background-color: #14463a;
+    color: #fff;
+    transition: .5s ease-out;
+}
+
+.f-app-btns .f-app-btn {
+    flex: 1 1 144px;
+    max-width: 144px;
+    padding-bottom: unset;
+}
+
+.f-app-btns {
+    display: flex;
+    gap: 12px;
+}
+
+.bottom-footer {
+    padding: 17px 0 40px;
+}
+
+footer .bottom-footer{
+    border-top: 1px solid hsla(0, 0%, 85%, .1);
+}
+
+.bottom-footer p {
+    max-width: unset;
+    text-align: center;
+}
+
+footer .bottom-footer p {
+    color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+}

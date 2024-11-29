@@ -1,0 +1,133 @@
+@media only screen and (min-width: 1200px) {
+    header .desk-head .desk-item:nth-child(2) {
+      align-items: center;
+      display: flex;
+      flex: 1 1 45%;
+      max-width: 45%;
+    }
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: General Sans,sans-serif;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background: #ddd;
+  }
+
+  h6 {
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .nav-bar {
+    background-color: #1d4f1f;
+    box-shadow: 0 5px 27px 0 rgba(0, 0, 0, 0.219);
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+  }
+
+  .top-nav .bot-nav {
+    display: block;
+    list-style: none;
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .top-nav {
+    background-color: #2d9751;
+    overflow: hidden;
+    padding: 28px 70px;
+    margin: 0 50px 0 50px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .top-nav a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .search {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+  }
+
+  .top-left{
+    float: left;
+  } 
+  
+  .top-right {
+    float: right;
+  }
+
+  .bot-nav {
+    color: gray;
+    background-color: white;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .bot-nav a{
+    color: grey;
+    text-decoration: none;
+  }
+
+  .bot-nav li{
+    padding: 14px 53px;
+    float: left;
+    list-style: none;
+  }
+
+/* Container to center content */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+}
+
+/* Column body for each section */
+.col-body {
+  width: 100%;
+  text-align: center;
+}
+
+/* Grid layout for images */
+.bar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns for the images */
+  gap: 5px; /* Space between the images */
+  justify-items: center;
+  margin-top: 20px;
+}
+
+/* Individual image styles */
+.bar-left img {
+  width: 632px;
+  height: 150px;
+  object-fit: cover; /* Ensures the image fills the box without distortion */
+  border-radius: 8px; /* Optional: adds rounded corners to images */
+}
+
+/* Optional: Add some responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .bar {
+      grid-template-columns: 1fr; /* Stack images in one column on smaller screens */
+  }
+  .bar-left img {
+      width: 100%; /* Make images responsive */
+  }
+}

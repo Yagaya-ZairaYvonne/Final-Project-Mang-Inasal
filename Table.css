@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1300px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  /* Allergen Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    position: relative;
+  }
+  
+  thead th .icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 8px auto;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  thead th .celery {
+    background-image: url('celery-icon.png');
+  }
+  
+  thead th .gluten {
+    background-image: url('gluten-icon.png');
+  }
+  
+  thead th .crustaceans {
+    background-image: url('crustaceans-icon.png');
+  }
+  
+  thead th .eggs {
+    background-image: url('eggs-icon.png');
+  }
+  
+  thead th .fish {
+    background-image: url('fish-icon.png');
+  }
+  
+  thead th .milk {
+    background-image: url('milk-icon.png');
+  }
+  
+  thead th .mollusks {
+    background-image: url('mollusks-icon.png');
+  }
+  
+  thead th .peanuts {
+    background-image: url('peanuts-icon.png');
+  }
+  
+  thead th .sesame {
+    background-image: url('sesame-icon.png');
+  }
+  
+  tbody td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Legend Indicators */
+  .contains {
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    
+  }
+  
+  .might-contains {
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    background-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  

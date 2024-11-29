@@ -1,0 +1,311 @@
+/* General Styles */
+@media only screen and (min-width: 1200px) {
+  header .desk-head .desk-item:nth-child(2) {
+    align-items: center;
+    display: flex;
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  }
+
+  body {
+    font-family: General Sans,sans-serif;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  
+  /* Search Bar */
+.search-bar {
+  position: absolute; /* Makes it independent of flexbox alignment */
+  left: 50%; /* Move to the center of the header */
+  transform: translateX(-50%); /* Shift back by half its width to center */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-bar input {
+  width: 250px;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.search-bar .search-btn {
+  padding: 0.5rem 1rem;
+  background-color: #2d9751;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar .search-btn:hover {
+  background-color: #14463a;
+}
+
+.search-icon{
+    color: #2d9751;
+}
+
+/* For alignment of nav and other header items */
+.nav, .login-btn, .logo {
+  z-index: 1; /* Ensures they appear above the search bar */
+}
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+  }
+  .hero h1{
+    color: #14463a;
+  }
+  
+  .hero p {
+    color: #212529;
+  }
+
+  /* Menu Section */
+  .menu {
+    padding: 2rem;
+    text-align: left;
+    color: #14463a;
+    background-color: #faf5ee;
+  }
+  
+  .menu h3{
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    font-weight: lighter;
+    margin-top: 15px;
+    margin-left: 5px;
+  }
+
+  .menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .menu-item {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .menu-item {
+    font-size: 10px;
+    color: black;
+    text-align: center;
+  }
+
+  .menu-item img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .menu-item button {
+    font-weight: bold;
+    background-color: #2d9751;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Promos Section */
+  .promos {
+    background-color: #1d4f1f;
+    padding: 2rem;
+    text-align: left;
+    color: #fbee37;
+  }
+
+  .promos h3 {
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    font-weight: lighter;
+  } 
+  
+  .promo-items {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .promo-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+  }
+  
+ /* Order Now Section */
+.order-now {
+    background-color: #faf5ee;
+    color: #2d9751;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .order-now h2 {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  
+  .order-now p {
+    margin-bottom: 2rem;
+    color: black;
+    text-align: left;
+  }
+  
+  /* Flex container for the two items side by side */
+  .order-now-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap; /* Ensures proper stacking on smaller screens */
+  }
+  
+  /* Individual order items */
+  .order-now-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Image Styling */
+  .order-now-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Text Container */
+  .order-now-text {
+    text-align: left;
+  }
+  
+  .order-now-text h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .order-now-text p {
+    margin-bottom: 1rem;
+  }
+  
+  /* App Store Buttons */
+  .app-buttons img {
+    width: 30px;
+    margin-right: 0.5rem;
+  }
+  
+  /* Button Styling */
+  .order-now-text button {
+    background-color: #fbee37;
+    color: #2d9751;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .order-now-text button:hover {
+    background-color: #fbee37;
+  }
+  
+/* Style for the Download App Section */
+.order-now-item:first-child {
+    background-color: #2d9751; 
+    color: white; 
+  }
+  
+  .order-now-item:first-child .order-now-text h3 {
+    color: white;
+  }
+  
+  .order-now-item:first-child .order-now-text p {
+    color: white;
+    font-size: 10px;
+  }
+  
+  .order-now-item:first-child .app-buttons img {
+    filter: brightness(1.5); /* Brightens icons for visibility */
+  }
+  
+  /* Style for the Order Online Section */
+  .order-now-item:nth-child(2) {
+    background-color: #fbee37; 
+    color: #2d9751; 
+  }
+  
+  .order-now-item:nth-child(2) .order-now-text h3 {
+    color: #2d9751; 
+  }
+  
+  .order-now-item:nth-child(2) .order-now-text p {
+    color: black; 
+    font-size: 10px;
+  }
+  
+  .order-now-item:nth-child(2) button {
+    background-color: #2d9751; 
+    color: white; 
+  }  
+
+/* Order Now Section: Consistent Size for Items */
+.order-now-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-width: 400px;
+    width: 100%; /* Ensures both sections have the same width */
+    height: 200px; /* Set consistent height */
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Styling for App Store and Google Play Icons */
+.order-now-item:first-child .app-buttons img {
+    filter: brightness(0) invert(1); /* Changes icons to white */
+    width: 50px; /* Uniform size */
+    margin-right: 0.5rem;
+}
+
+/* Responsive Design for Consistent Size */
+@media (max-width: 768px) {
+    .order-now-row {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+        align-items: center;
+    }
+
+    .order-now-item {
+        width: 100%; /* Ensure full width on smaller screens */
+        height: auto; /* Adapt height */
+    }
+}
+  
